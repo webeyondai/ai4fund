@@ -1,6 +1,6 @@
-# AI Hedge Fund
+# AI4Funds | AI for Funds
 
-This is a proof of concept for an AI-powered hedge fund.  The goal of this project is to explore the use of AI to make trading decisions.  This project is for **educational** purposes only and is not intended for real trading or investment.
+This is a proof of concept for an AI-powered fund.  The goal of this project is to explore the use of AI to make trading decisions.  This project is for **educational** purposes only and is not intended for real trading or investment.
 
 This system employs several agents working together:
 
@@ -18,10 +18,11 @@ This system employs several agents working together:
 
 <img width="1117" alt="Screenshot 2025-02-09 at 11 26 14 AM" src="https://github.com/user-attachments/assets/16509cc2-4b64-4c67-8de6-00d224893d58" />
 
+## Join Our Community  
+**[Join our Telegram Group](https://t.me/ai4funds)**  
+Stay updated with the latest AI-driven investment insights!
 
 **Note**: the system simulates trading decisions, it does not actually trade.
-
-[![Twitter Follow](https://img.shields.io/twitter/follow/virattt?style=social)](https://twitter.com/virattt)
 
 ## Disclaimer
 
@@ -36,21 +37,25 @@ This project is for **educational and research purposes only**.
 By using this software, you agree to use it solely for learning purposes.
 
 ## Table of Contents
-- [Setup](#setup)
-- [Usage](#usage)
-  - [Running the Hedge Fund](#running-the-hedge-fund)
-  - [Running the Backtester](#running-the-backtester)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [Feature Requests](#feature-requests)
-- [License](#license)
+- [AI4Funds | AI for Funds](#ai4funds--ai-for-funds)
+  - [Join Our Community](#join-our-community)
+  - [Disclaimer](#disclaimer)
+  - [Table of Contents](#table-of-contents)
+  - [Setup](#setup)
+  - [Usage](#usage)
+    - [Running the Fund](#running-the-fund)
+    - [Running the Backtester](#running-the-backtester)
+  - [Project Structure](#project-structure)
+  - [Contributing](#contributing)
+  - [Feature Requests](#feature-requests)
+  - [License](#license)
 
 ## Setup
 
 Clone the repository:
 ```bash
-git clone https://github.com/virattt/ai-hedge-fund.git
-cd ai-hedge-fund
+git clone https://github.com/webeyondai/ai4funds.git
+cd ai4funds
 ```
 
 1. Install Poetry (if not already installed):
@@ -79,12 +84,12 @@ OPENAI_API_KEY=your-openai-api-key
 # Get your Groq API key from https://groq.com/
 GROQ_API_KEY=your-groq-api-key
 
-# For getting financial data to power the hedge fund
+# For getting financial data to power the fund
 # Get your Financial Datasets API key from https://financialdatasets.ai/
 FINANCIAL_DATASETS_API_KEY=your-financial-datasets-api-key
 ```
 
-**Important**: You must set `OPENAI_API_KEY`, `GROQ_API_KEY`, or `ANTHROPIC_API_KEY` for the hedge fund to work.  If you want to use LLMs from all providers, you will need to set all API keys.
+**Important**: You must set `OPENAI_API_KEY`, `GROQ_API_KEY`, or `ANTHROPIC_API_KEY` for the fund to work.  If you want to use LLMs from all providers, you will need to set all API keys.
 
 Financial data for AAPL, GOOGL, MSFT, NVDA, and TSLA is free and does not require an API key.
 
@@ -92,7 +97,7 @@ For any other ticker, you will need to set the `FINANCIAL_DATASETS_API_KEY` in t
 
 ## Usage
 
-### Running the Hedge Fund
+### Running the Fund
 ```bash
 poetry run python src/main.py --ticker AAPL,MSFT,NVDA
 ```
@@ -128,7 +133,7 @@ poetry run python src/backtester.py --ticker AAPL,MSFT,NVDA --start-date 2024-01
 
 ## Project Structure 
 ```
-ai-hedge-fund/
+ai4funds/
 ├── src/
 │   ├── agents/                   # Agent definitions and workflow
 │   │   ├── bill_ackman.py        # Bill Ackman agent
@@ -159,7 +164,7 @@ ai-hedge-fund/
 
 ## Feature Requests
 
-If you have a feature request, please open an [issue](https://github.com/virattt/ai-hedge-fund/issues) and make sure it is tagged with `enhancement`.
+If you have a feature request, please open an [issue](https://github.com/webeyondai/ai4funds/issues) and make sure it is tagged with `enhancement`.
 
 ## License
 
